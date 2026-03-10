@@ -1,0 +1,20 @@
+ 2025  git clone git@github.com:Timofey86/HW.git
+ 2026  cd ../
+ 2027  rm -r 1
+ 2028  git clone git@github.com:Timofey86/HW.git ./HW_git
+ 2029  cd HW_git/
+ 2030  ls
+ 2031  ls -la
+ 2032  git checkout -b feature
+ 2033  echo "#HW" >> README.md
+ 2034  nano .gitignore 
+ 2035  git status
+ 2036  git add .
+ 2037  git commit -m "added README.md and edited .gitignore"
+ 2038  git push -u origin feature 
+ 2039  git commit --amend
+ 2040  git checkout master
+ 2041  git branch
+ 2042  git checkout main
+ 2043  git merge feature
+ 2044  history | tail -20 >> history.txt
